@@ -1,4 +1,6 @@
-# aquadev
+# eFishery Academy: Aqua-Developer Batch 2.2
+**Adnan M. Lazuardi**
+
 Repository untuk pengumpulan tugas eFishery Academy, Aqua-Developer Batch 2.2
 
 Dokumen tugas harian diorganisasikan ke dalam folder-folder terkait.
