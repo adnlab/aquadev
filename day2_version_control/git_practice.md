@@ -3,7 +3,7 @@ by: Adnan M. Lazuardi
 
 ## Git Init
 
-![[images\git_init.png]]
+![[images/git_init.png]]
 
 ## images\Git Status
 
