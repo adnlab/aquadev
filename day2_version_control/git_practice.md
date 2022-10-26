@@ -5,56 +5,56 @@ by: Adnan M. Lazuardi
 
 ![](./images/git_init.png)
 
-## images\Git Status
+## Git Status
 
-![](images\git_status.png)
+![](./images/git_status.png)
 
-## images\Git Add
+## Git Add
 
-![](images\git_add.png)
+![](./images/git_add.png)
 
-## images\Git Commit
+## Git Commit
 
-![](images\git_commit.png)
+![](./images/git_commit.png)
 
-## images\Git Remote
+## Git Remote
 
-![](images\git_remote.png)
+![](./images/git_remote.png)
 
-## images\Git Push
+## Git Push
 
-![](images\git_push.png)
+![](./images/git_push.png)
 
-## images\Git Fetch
+## Git Fetch
 
-![](images\git_fetch.png)
+![](./images/git_fetch.png)
 
-## images\Git Pull
+## Git Pull
 
-![](images\git_pull.png)
+![](./images/git_pull.png)
 
-## images\Git Branch
+## Git Branch
 
-![](images\git_branch.png)
+![](./images/git_branch.png)
 
-## images\Git Merge
+## Git Merge
 
-![](images\git_merge.png)
+![](./images/git_merge.png)
 
-## images\Git Stash
+## Git Stash
 
-![](images\git_stash.png)
+![](./images/git_stash.png)
 
-![](images\git_stash_list.png)
+![](./images/git_stash_list.png)
 
-![](images\git_stash_show.png)
+![](./images/git_stash_show.png)
 
-![](images\git_stash_pop.png)
+![](./images/git_stash_pop.png)
 
-![](images\git_stash_apply.png)
+![](./images/git_stash_apply.png)
 
-![](images\git_stash_clear.png)
+![](./images/git_stash_clear.png)
 
 ## Git Restore
 
-![](images\git_restore.png)
+![](./images/git_restore.png)
