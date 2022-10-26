@@ -41,26 +41,26 @@ Suatu *transportation management system* (TMS) merupakan platform logistik yang 
 	- jumlah yang dikirim sesuai dengan yang diterima?
 
 **Actions, Mindsets, Emotions**
-- 
+- *smth*
 
 **Pain Points**
-- 
+- *smth*
 
 **Opportunities**
 - necessary
-	- 
+	- *smth*
 - nice to have
-	- 
+	- *smth*
 
 ## Value for User
 **Specify Value**
-- 
+- *smth*
 
 **Identify Value**
-- 
+- *smth*
 
 **Guarantee the Flow**
-- 
+- *smth*
 
 # 3. Detailed Design
 
