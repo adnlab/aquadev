@@ -10,3 +10,4 @@ Dokumen tugas harian diorganisasikan ke dalam folder-folder terkait.
 4. day4_golang_basic
 5. day5_golang_advance
 6. day6_golang_advance_pt2
+7. day7_golang_advance_pt3
