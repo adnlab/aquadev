@@ -53,3 +53,13 @@ SELECT orders.order_id, customers.customer_name, products.name, orders.order_dat
 FROM orders
 INNER JOIN customers ON orders.customer_id = customers.id
 INNER JOIN products ON orders.product_id = products.id;
+
+
+create table if not exists Users (
+	ID serial not null,
+	Name char(50) not null,
+	Email char(50) not null,
+	Phone char(50) not null,
+	Address char(50) not null,
+	primary key (ID)
+);
