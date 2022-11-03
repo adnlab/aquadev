@@ -74,4 +74,5 @@ func main() {
 	chc.aggregate()
 
 	fmt.Printf("took %v\n", time.Since(start2))
+
 }
