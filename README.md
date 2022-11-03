@@ -11,3 +11,6 @@ Dokumen tugas harian diorganisasikan ke dalam folder-folder terkait.
 5. day5_golang_advance
 6. day6_golang_advance_pt2
 7. day7_golang_advance_pt3
+8. day8_cloud_native
+9. day9_cloud_native_pt2
+10. day10_efishery_system
