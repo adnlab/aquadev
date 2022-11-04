@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+  # Database
+  adnan-db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: adnan
+      MYSQL_USER: adnan
+      MYSQL_PASSWORD: adnan-wdprs
+    networks:
+      - wpsite
+  # phpmyadmin
+  phpmyadmin:
+    depends_on:
+      - adnan-db
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - '8080:80'
+    environment:
+      PMA_HOST: adnan-db
+      MYSQL_ROOT_PASSWORD: password 
+    networks:
+      - wpsite
+  # Wordpress
+  wordpress:
+    depends_on:
+      - adnan-db
+    image: wordpress:latest
+    ports:
+      - '8000:80'
+    restart: always
+    volumes: ['./:/var/www/html']
+    environment:
+      WORDPRESS_DB_HOST: adnan-db:3306
+      WORDPRESS_DB_USER: adnan
+      WORDPRESS_DB_PASSWORD: adnan-wdprs
+      WORDPRESS_DB_NAME: adnan
+    networks:
+      - wpsite
+networks:
+  wpsite:
+volumes:
+  db_data:

@@ -22,6 +22,7 @@ type User struct {
 	Name string `json:"name"`
 }
 
+/*
 type hitung interface {
 	luas() float64
 	keliling() float64
@@ -42,6 +43,7 @@ func (l lingkaran) luas() float64 {
 func (l lingkaran) keliling() float64 {
 	return math.Pi * l.diameter
 }
+*/
 
 type persegi struct {
 	sisi float64
