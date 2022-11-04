@@ -11,6 +11,7 @@ import (
 type IUserUsecase interface {
 	CreateUser(user response.CreateUserRequest) error
 	GetListUser() ([]response.GetUserResponse, error)
+	DeleteUser(user response.DeleteUserRequest) error
 }
 
 type UserUsecase struct {
@@ -40,4 +41,29 @@ func (u UserUsecase) GetList() ([]response.GetUserResponse, error) {
 	userResponse := []response.GetUserResponse{}
 	copier.Copy(&userResponse, &users)
 	return userResponse, nil
+}
+
+func (u UserUsecase) UpdateUser(req response.UpdateUserRequest) error {
+	user := entity.User{}
+	copier.Copy(&user, &req)
+
+	err := u.userRepository.Update(user)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func (u UserUsecase) DeleteUser(req response.DeleteUserRequest) error {
+	if err := u.userRepository.GetByID(req); err != nil {
+		return err
+	}
+
+	user := entity.User{}
+	copier.Copy(&user, &req)
+
+	if err := u.userRepository.Delete(user); err != nil {
+		return err
+	}
+	return nil
 }

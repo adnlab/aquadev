@@ -16,3 +16,15 @@ type CreateUserRequest struct {
 type GetUserResponse struct {
 	Name string
 }
+
+type UpdateUserRequest struct {
+	ID      int64  `json:"id"`
+	Name    string `json:"name"`
+	Email   string `json:"email"`
+	Phone   string `json:"phone"`
+	Address string `json:"address"`
+}
+
+type DeleteUserRequest struct {
+	ID int64 `json:"id"`
+}

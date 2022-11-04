@@ -2,6 +2,7 @@ package repository
 
 import (
 	"user-management/entity"
+	"user-management/entity/response"
 
 	"gorm.io/gorm"
 )
@@ -9,6 +10,9 @@ import (
 type IUserRepository interface {
 	Create(user entity.User) error
 	GetAll() ([]entity.User, error)
+	GetByID(req response.DeleteUserRequest) error
+	Update(user entity.User) error
+	Delete(user entity.User) error
 }
 
 type UserRepository struct {
@@ -32,4 +36,26 @@ func (u UserRepository) GetAll() ([]entity.User, error) {
 		return nil, nil
 	}
 	return users, nil
+}
+
+func (u UserRepository) GetByID(req response.DeleteUserRequest) error {
+	var user entity.User
+	if err := u.db.First(&user).Error; err != nil {
+		return err
+	}
+	return nil
+}
+
+func (u UserRepository) Update(user entity.User) error {
+	if err := u.db.Save(&user).Error; err != nil {
+		return err
+	}
+	return nil
+}
+
+func (u UserRepository) Delete(user entity.User) error {
+	if err := u.db.Delete(&user).Error; err != nil {
+		return err
+	}
+	return nil
 }
